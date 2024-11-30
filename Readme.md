@@ -87,6 +87,7 @@ npm run dev
 - Check out `frontend/src/pages/Clocks/ClockCurrentTime/ClockCurrentTime.jsx` for examples of using `useState`.  
 - Check out `frontend/src/pages/Clocks/ClockStopwatch/ClockStopwatchUseRef.jsx` for examples of using `useRef`.  
 - Check out `frontend/src/pages/Clocks/ClockCountDown/ClockCountDown.jsx` for examples of using `useState`.  
+- Check out `frontend/src/pages/Board/Board.jsx` for examples of using `properties`.  
 - All components use `useEffect` to run functions after re-rendering.  
 
 ### 3.3 React Router  
@@ -102,10 +103,11 @@ npm run dev
 - Check out `frontend/src/pages/Main/Main.jsx` to see how `useSelector` retrieves `todoList` generated on a sub-page.  
 
 ### 3.5 API Calls  
-- Check out `frontend/src/APIs/APICatPromise/index.jsx` for examples of using `fetch` and promises in the old style with `then`.  
-- Check out `frontend/src/APIs/APICatPromise/index.jsx` for examples of using `fetch`, `async`, and `await` with modern `try` and `catch`.  
+- Check out `frontend/src/pages/APIs/APICatPromise/index.jsx` for examples of using `fetch` and promises in the old style with `then`.  
+- Check out `frontend/src/pages/APIs/APICatPromise/index.jsx` for examples of using `fetch`, `async`, and `await` with modern `try` and `catch`.  
 
-### 3.6 Building an API with Express  
+### 3.6 Building an API with Express and Call on React.  
+- CRUD project.  
 - Check out `backend/server.js` to see how to set up an Express app with `cors`.  
 - The request flow is as follows:
   1. A client (frontend) makes a request.  
@@ -118,4 +120,6 @@ npm run dev
 - Check out `backend/controllers/postControllers.js` for examples of setting up APIs for CRUD methods.  
 - Check out `backend/middleware/` for examples of creating middleware.  
 - Check out `backend/test.js` for debugging examples or use Postman.  `node test.js`.  
-
+- Check out `frontend/src/pages/Board/Board.jsx` to see how to all custom APIs.  
+- Here, when clicking the add, delete, refresh, or edit button, the data will first be sent to the API. After the API processes the request and sends back the updated data, the state will be updated accordingly, and then the updated state will change the store(redux).  
+- All data manipulation is handled strictly by the backend to ensure consistency and reliability.  

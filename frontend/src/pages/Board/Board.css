@@ -1,0 +1,51 @@
+.board-container {
+  margin: 50px;
+}
+
+.board-container .search-container,
+.board-container .add-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2vw;
+  padding: 10px;
+  margin: 10px;
+}
+
+input, button
+ {
+  width: 10vw;
+  height: 3vh;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+
+.posts-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.post-container {
+  display: flex;
+  align-items: center;
+}
+
+.post-id,
+.post-title,
+.post-content {
+  margin: 10px;
+}
+
+.post-id::before {
+  content: 'ID : ';
+}
+.post-title::before {
+  content: 'Title : ';
+}
+.post-content::before {
+  content: 'Content : ';
+}
+
