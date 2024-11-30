@@ -1,0 +1,36 @@
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0 10px 0;
+  border-bottom: white 2px solid;
+
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  padding: 10px;
+  transition: font-size 0.15s, color 0.15s;
+}
+
+.nav-item:hover {
+  font-size: 1.5rem;
+}
+
+.nav-item:active {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: rgb(171, 165, 255);
+  animation: spin 0.2s ease-in-out;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

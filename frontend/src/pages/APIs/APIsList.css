@@ -1,0 +1,9 @@
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link::before {
+  content: "👉 "; /* 링크 앞에 화살표 추가 */
+  color: gray;   /* 화살표 색상 */
+}
